@@ -1,79 +1,40 @@
-This is a new [**React Native**](https://reactnative.dev) project, bootstrapped using [`@react-native-community/cli`](https://github.com/react-native-community/cli).
+# 이약뭐야?
 
-# Getting Started
 
->**Note**: Make sure you have completed the [React Native - Environment Setup](https://reactnative.dev/docs/environment-setup) instructions till "Creating a new application" step, before proceeding.
+### 프로젝트 소개
 
-## Step 1: Start the Metro Server
+> **이약뭐야?** 는 누구나 쉽고 편리하게 검색하는 의약품 검색 플랫폼입니다.  
 
-First, you will need to start **Metro**, the JavaScript _bundler_ that ships _with_ React Native.
+### 진행 기간 👩🏻‍💻
 
-To start Metro, run the following command from the _root_ of your React Native project:
+- **2024.08.30 - 2024.00.00**
 
-```bash
-# using npm
-npm start
+### 기술 스택
 
-# OR using Yarn
-yarn start
-```
+- ![React Native](https://img.shields.io/badge/React%20Native-61DAFB?style=flat&logo=React&logoColor=white)
+  ![typescript](https://img.shields.io/badge/TypeScript-3178C6?style=flat&logo=typescript&logoColor=white)
+  ![Axios](https://img.shields.io/badge/Axios-5A29E4?style=flat&logo=Axios&logoColor=white)
+  ![Styled-component](https://img.shields.io/badge/styled%20components-DB7093?style=flat&logo=styledcomponents&logoColor=white)
 
-## Step 2: Start your Application
+### 구현한 기능
 
-Let Metro Bundler run in its _own_ terminal. Open a _new_ terminal from the _root_ of your React Native project. Run the following command to start your _Android_ or _iOS_ app:
+**이약뭐야?** 는 어렵고 복잡하여 의약품을 검색하는 데 불편한 경험을 하셨던 분들을 위해 제작되었습니다.   
+이약뭐야? 를 통해 쉽고 편리하게 의약품을 검색하세요!
 
-### For Android
+**① 약 검색**
+- 사용자가 검색창에 약 이름, 제조사 또는 식별검색을 통하여 원하는 약을 쉽게 검색할 수 있습니다.
+- 이를 통해 약의 성분, 효능, 복용법, 부작용 등 다양한 정보를 빠르게 확인할 수 있습니다.
 
-```bash
-# using npm
-npm run android
+② 의약 정보 제공
+- 어르신/임산부/수유부/어린이 등 사용자의 상황에 맞는 의약 정보를 제공합니다.
+- 필요한 의약 정보가 있을 때 해당 항목을 선택하면, 관련 정보 페이지를 확인할 수 있습니다.
+- 각 사용자 그룹에 맞춘 약물 사용 가이드라인과 주의사항을 손쉽게 확인할 수 있어, 보다 안전한 약물 복용이 가능합니다.
 
-# OR using Yarn
-yarn android
-```
+③ 약 즐겨찾기
+- 자주 복용하는 약이나 관심 있는 약을 즐겨찾기에 추가할 수 있습니다.
+- 즐겨찾기에 추가된 약은 필요할 때마다 빠르게 접근하여 관련 정보를 확인할 수 있습니다.
 
-### For iOS
+### Documents
 
-```bash
-# using npm
-npm run ios
-
-# OR using Yarn
-yarn ios
-```
-
-If everything is set up _correctly_, you should see your new app running in your _Android Emulator_ or _iOS Simulator_ shortly provided you have set up your emulator/simulator correctly.
-
-This is one way to run your app — you can also run it directly from within Android Studio and Xcode respectively.
-
-## Step 3: Modifying your App
-
-Now that you have successfully run the app, let's modify it.
-
-1. Open `App.tsx` in your text editor of choice and edit some lines.
-2. For **Android**: Press the <kbd>R</kbd> key twice or select **"Reload"** from the **Developer Menu** (<kbd>Ctrl</kbd> + <kbd>M</kbd> (on Window and Linux) or <kbd>Cmd ⌘</kbd> + <kbd>M</kbd> (on macOS)) to see your changes!
-
-   For **iOS**: Hit <kbd>Cmd ⌘</kbd> + <kbd>R</kbd> in your iOS Simulator to reload the app and see your changes!
-
-## Congratulations! :tada:
-
-You've successfully run and modified your React Native App. :partying_face:
-
-### Now what?
-
-- If you want to add this new React Native code to an existing application, check out the [Integration guide](https://reactnative.dev/docs/integration-with-existing-apps).
-- If you're curious to learn more about React Native, check out the [Introduction to React Native](https://reactnative.dev/docs/getting-started).
-
-# Troubleshooting
-
-If you can't get this to work, see the [Troubleshooting](https://reactnative.dev/docs/troubleshooting) page.
-
-# Learn More
-
-To learn more about React Native, take a look at the following resources:
-
-- [React Native Website](https://reactnative.dev) - learn more about React Native.
-- [Getting Started](https://reactnative.dev/docs/environment-setup) - an **overview** of React Native and how setup your environment.
-- [Learn the Basics](https://reactnative.dev/docs/getting-started) - a **guided tour** of the React Native **basics**.
-- [Blog](https://reactnative.dev/blog) - read the latest official React Native **Blog** posts.
-- [`@facebook/react-native`](https://github.com/facebook/react-native) - the Open Source; GitHub **repository** for React Native.
+- [Notion](https://gyeongju.notion.site/99889cb1d19847a9b59c588a3a11709d?pvs=4)
+- [Figma](https://www.figma.com/design/gaIR8Ag5OpphaRAqyPGWOU/%EC%9D%B4-%EC%95%BD-%EB%AD%90%EC%95%BC%3F?node-id=0-1&t=YIiiWTLAMBv44e2D-1)
