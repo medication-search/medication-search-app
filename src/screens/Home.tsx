@@ -1,11 +1,7 @@
-import {Text, View} from 'react-native';
+import HomeLayout from '@components/home/home-layout/HomeLayout.tsx';
 
 const Home = () => {
-  return (
-    <View>
-      <Text>HOME</Text>
-    </View>
-  );
+  return <HomeLayout />;
 };
 
 export default Home;
