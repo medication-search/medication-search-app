@@ -8,8 +8,19 @@ import FavoritesClick from '@assets/icons/bottom-tabs/FavoritesClick.svg';
 import FavoritesNonClick from '@assets/icons/bottom-tabs/FavoritesNonClick.svg';
 import Home from '@screens/Home.tsx';
 import Search from '@screens/Search.tsx';
+import {View} from 'react-native';
+import HeaderIcon from '@assets/icons/Header.svg';
+import {StyleSheet} from 'react-native';
 
 const Tab = createBottomTabNavigator();
+
+function HeaderImage() {
+  return (
+    <View style={styles.headerContainer}>
+      <HeaderIcon height={40} />
+    </View>
+  );
+}
 
 function getTabBarIcon(routeName: string, focused: boolean) {
   switch (routeName) {
@@ -48,13 +59,18 @@ function BottomTabs() {
       screenOptions={({route}) => ({
         tabBarActiveTintColor: '#6ECEC9',
         tabBarIcon: ({focused}) => getTabBarIcon(route.name, focused),
-        tabBarStyle: {
-          borderTopLeftRadius: 6,
-          borderTopRightRadius: 6,
-          height: 55,
-        },
+        tabBarLabelStyle: styles.tabBarLabel,
+        tabBarStyle: styles.tabBar,
       })}>
-      <Tab.Screen name="홈" component={Home} options={{unmountOnBlur: true}} />
+      <Tab.Screen
+        name="홈"
+        component={Home}
+        options={{
+          unmountOnBlur: true,
+          headerTitle: () => <HeaderImage />,
+          headerStyle: styles.headerStyle,
+        }}
+      />
       <Tab.Screen
         name="모양찾기"
         component={Search}
@@ -73,5 +89,28 @@ function BottomTabs() {
     </Tab.Navigator>
   );
 }
+
+const styles = StyleSheet.create({
+  headerContainer: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    justifyContent: 'center',
+  },
+  headerStyle: {height: 45},
+  tabBar: {
+    height: 60,
+    borderTopLeftRadius: 3,
+    borderTopRightRadius: 3,
+    shadowColor: '#000',
+    shadowOffset: {width: 0, height: 5},
+    shadowOpacity: 0.3,
+    shadowRadius: 4,
+    elevation: 5,
+    backgroundColor: '#ffffff',
+  },
+  tabBarLabel: {
+    bottom: 5,
+  },
+});
 
 export default BottomTabs;
