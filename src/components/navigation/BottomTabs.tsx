@@ -1,3 +1,4 @@
+import {StyleSheet, View} from 'react-native';
 import {createBottomTabNavigator} from '@react-navigation/bottom-tabs';
 import HomeIcon from '@assets/icons/bottom-tabs/Home.svg';
 import SearchClick from '@assets/icons/bottom-tabs/SearchClick.svg';
@@ -6,18 +7,16 @@ import InformationClick from '@assets/icons/bottom-tabs/InformationClick.svg';
 import InformationNonClick from '@assets/icons/bottom-tabs/InformationNonClick.svg';
 import FavoritesClick from '@assets/icons/bottom-tabs/FavoritesClick.svg';
 import FavoritesNonClick from '@assets/icons/bottom-tabs/FavoritesNonClick.svg';
+import Logo from '@assets/icons/home/Header.svg';
 import Home from '@screens/Home.tsx';
 import Search from '@screens/Search.tsx';
-import {View} from 'react-native';
-import HeaderIcon from '@assets/icons/Header.svg';
-import {StyleSheet} from 'react-native';
 
 const Tab = createBottomTabNavigator();
 
-function HeaderImage() {
+function HeaderLogo() {
   return (
     <View style={styles.headerContainer}>
-      <HeaderIcon height={40} />
+      <Logo height={40} />
     </View>
   );
 }
@@ -61,14 +60,14 @@ function BottomTabs() {
         tabBarIcon: ({focused}) => getTabBarIcon(route.name, focused),
         tabBarLabelStyle: styles.tabBarLabel,
         tabBarStyle: styles.tabBar,
+        headerStyle: styles.headerStyle,
       })}>
       <Tab.Screen
         name="홈"
         component={Home}
         options={{
           unmountOnBlur: true,
-          headerTitle: () => <HeaderImage />,
-          headerStyle: styles.headerStyle,
+          headerTitle: () => <HeaderLogo />,
         }}
       />
       <Tab.Screen
